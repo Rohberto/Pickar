@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickar Delivery Platform Proposal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: white;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+        }
+        
+        @media print {
+            body {
+                padding: 15mm;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #861313;
+        }
+        
+        .logo-bg {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #861313 0%, #861313 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #861313;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #64748b;
+            font-weight: 400;
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #861313;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #334155;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            margin-bottom: 12px;
+            color: #334155;
+            font-size: 14px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #475569;
+            font-size: 14px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .highlight-box {
+            background: #f1f5f9;
+            border-left: 4px solid #861313;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .pricing-box {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border: 2px solid #861313;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .pricing-box h3 {
+            color: #861313;
+            margin-top: 0;
+            font-size: 18px;
+        }
+        
+        .price-main {
+            font-size: 28px;
+            font-weight: 700;
+            color: #861313;
+            margin: 15px 0;
+        }
+        
+        .payment-schedule {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        
+        .payment-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .payment-item:last-child {
+            border-bottom: none;
+        }
+        
+        .payment-percentage {
+            font-weight: 600;
+            color: #861313;
+        }
+        
+        .payment-amount {
+            font-weight: 700;
+            color: #861313;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .tech-item {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #861313;
+        }
+        
+        .tech-item strong {
+            color: #861313;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+            text-align: center;
+            color: #64748b;
+            font-size: 12px;
+        }
+        
+        .contact-info {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+        
+        strong {
+            color: #861313;
+        }
+        
+        .timeline-item {
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .timeline-task {
+            color: #475569;
+        }
+        
+        .timeline-duration {
+            font-weight: 600;
+            color: #861313;
+        }
+        
+        .benefit-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .benefit-list li:before {
+            content: "✓";
+            color: #861313;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-bg">
+            <img src="Horizontal Logo 01.png" alt="Pickar Logo" style="width: 90px; height: auto; display: block;" />
+        </div>
+        <h1>PICKAR DELIVERY PLATFORM</h1>
+        <p class="subtitle">Formal Product Development Proposal - Equity Partnership Model</p>
+    </div>
+
+    <p style="text-align: center; margin-bottom: 30px; font-style: italic; color: #64748b;">
+        This proposal outlines the scope, architecture, timeline, pricing, and deliverables for the development of the Pickar Delivery Platform, including the mobile application, backend services, admin dashboard, and marketing website.
+    </p>
+
+    <div class="section">
+        <h2>1. Mobile Application (iOS & Android)</h2>
+        <ul>
+            <li>Unified React Native application with role-based access (User and Rider)</li>
+            <li>OTP-based authentication and secure onboarding</li>
+            <li>User features: delivery requests, live tracking, chat, payments, ratings, and history</li>
+            <li>Rider features: availability toggle, request handling, navigation, proof of delivery, earnings</li>
+            <li>Real-time tracking and push notifications</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. Delivery Matching Logic (MVP)</h2>
+        <ul>
+            <li>Radius-based rider discovery</li>
+            <li>First-come-first-accept model</li>
+            <li>Automatic timeout and reassignment</li>
+            <li>Architecture prepared for future intelligent matching</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Admin Dashboard (Web Application)</h2>
+        <ul>
+            <li>Real-time operational overview and map monitoring</li>
+            <li>User and rider management with KYC verification</li>
+            <li>Delivery lifecycle management and issue resolution</li>
+            <li>Financial management including payouts, commissions, and refunds</li>
+            <li>Content management and basic analytics with exports</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Marketing Website (Landing Page)</h2>
+        <ul>
+            <li>SEO-optimized, responsive design</li>
+            <li>Pages for users, riders, company info, FAQs, and legal policies</li>
+            <li>App download links and contact forms</li>
+            <li>Analytics integration</li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>5. Technical Architecture</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <strong>Mobile</strong>
+                React Native, Redux Toolkit, Google Maps API, Firebase Cloud Messaging
+            </div>
+            <div class="tech-item">
+                <strong>Backend</strong>
+                Node.js, Express, PostgreSQL, Redis, Socket.io, AWS S3
+            </div>
+            <div class="tech-item">
+                <strong>Admin</strong>
+                React.js with Material UI and Chart.js
+            </div>
+            <div class="tech-item">
+                <strong>Landing Page</strong>
+                Next.js with Tailwind CSS
+            </div>
+        </div>
+        <p><strong>Infrastructure:</strong> Cloud hosting, CDN, CI/CD, monitoring, and backups</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Development Timeline</h2>
+        <div class="highlight-box">
+            <div class="timeline-item">
+                <span class="timeline-task">Foundation & architecture</span>
+                <span class="timeline-duration">3 weeks</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-task">Core mobile application</span>
+                <span class="timeline-duration">6 weeks</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-task">Real-time features & payments</span>
+                <span class="timeline-duration">4 weeks</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-task">Admin dashboard</span>
+                <span class="timeline-duration">4 weeks</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-task">Landing page</span>
+                <span class="timeline-duration">2 weeks</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-task">Testing, QA & deployment</span>
+                <span class="timeline-duration">3 weeks</span>
+            </div>
+            <div class="timeline-item" style="border-bottom: none; font-weight: 700; color: #861313; margin-top: 10px;">
+                <span>ESTIMATED MVP DELIVERY</span>
+                <span>12–14 WEEKS</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>7. Pricing & Engagement Model - Partnership Structure</h2>
+        
+        <div class="pricing-box">
+            <h3>Investment Structure</h3>
+            <div class="price-main">₦4,000,000 + 5% Equity Stake</div>
+            <p style="color: #475569;">This partnership model reflects our commitment to Pickar's long-term success. By accepting equity, we're aligning our interests with yours and demonstrating confidence in the platform's potential.</p>
+        </div>
+
+        <h3>Payment Breakdown</h3>
+        <ul>
+            <li><strong>Complete Development Package:</strong> ₦4,000,000</li>
+            <li><strong>Equity Stake:</strong> 5% ownership in Pickar</li>
+            <li><strong>Phase 1 - MVP Development (3 months):</strong> ₦2,000,000</li>
+            <li><strong>Phase 2 - Enhancement & Polish (2 months):</strong> ₦2,000,000</li>
+        </ul>
+        <p style="font-style: italic; color: #64748b; margin-top: 15px;">Pricing includes development, testing, project management, and ongoing technical consultation during the development period.</p>
+
+        <h3>Equity Terms</h3>
+        <ul>
+            <li>5% equity stake in the Pickar platform/company</li>
+            <li>Standard vesting schedule (subject to negotiation)</li>
+            <li>Full source code ownership transferred to Pickar</li>
+            <li>Development team maintains strategic advisory role during critical growth phases</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Project Deliverables</h2>
+        <ul>
+            <li>Production-ready mobile apps (iOS & Android)</li>
+            <li>Backend API with comprehensive documentation</li>
+            <li>Admin dashboard and marketing website</li>
+            <li>Full source code ownership and intellectual property transfer</li>
+            <li>Deployment to production environment</li>
+            <li>Technical documentation and training materials</li>
+            <li>30 days post-launch technical support (included)</li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>9. Post-Launch Support & Maintenance (Optional)</h2>
+        <p>Our equity partnership includes 30 days of complimentary post-launch support. Extended maintenance plans are available:</p>
+        <ul>
+            <li><strong>3 Months Basic Support:</strong> ₦400,000</li>
+            <li><strong>6 Months Extended Support:</strong> ₦750,000</li>
+            <li><strong>Annual Maintenance Plan:</strong> ₦1,600,000 per year</li>
+        </ul>
+        <p style="font-style: italic; color: #64748b;">All support and maintenance plans are optional and can be engaged as needed.</p>
+    </div>
+
+    <div class="section">
+        <h2>10. Payment Terms</h2>
+        
+        <h3>Development Fee Payment Schedule</h3>
+        <div class="payment-schedule">
+            <div class="payment-item">
+                <span><span class="payment-percentage">30%</span> – Project kickoff and requirement sign-off</span>
+                <span class="payment-amount">₦1,200,000</span>
+            </div>
+            <div class="payment-item">
+                <span><span class="payment-percentage">25%</span> – Mobile application MVP completion</span>
+                <span class="payment-amount">₦1,000,000</span>
+            </div>
+            <div class="payment-item">
+                <span><span class="payment-percentage">20%</span> – Admin dashboard and landing page delivery</span>
+                <span class="payment-amount">₦800,000</span>
+            </div>
+            <div class="payment-item">
+                <span><span class="payment-percentage">15%</span> – Testing and quality assurance</span>
+                <span class="payment-amount">₦600,000</span>
+            </div>
+            <div class="payment-item">
+                <span><span class="payment-percentage">10%</span> – Final deployment and go-live</span>
+                <span class="payment-amount">₦400,000</span>
+            </div>
+        </div>
+
+        <h3>Equity Documentation</h3>
+        <ul>
+            <li>Equity agreement to be finalized within 30 days of project kickoff</li>
+            <li>Standard founder/investor protection clauses</li>
+            <li>Clear exit and buyback terms</li>
+        </ul>
+    </div>
+
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> oluwaseunrobert44@gmail.com</p>
+        <p><strong>Phone:</strong> +2349069154147</p>
+        <p><strong>Proposal Created:</strong> 18-12-2025.</p>
+    </div>
+
+    <div class="footer">
+        <p style="font-style: italic; margin-bottom: 10px;">This proposal represents a commitment to building not just software, but a successful business partnership.</p>
+        <p>© 2025 Pickar Delivery Platform • All Rights Reserved</p>
+    </div>
+</body>
+</html>
